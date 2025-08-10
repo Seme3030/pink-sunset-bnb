@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book — Pink Sunset</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Pink Sunset</h1>
+      <p class="tag">A Luxurious Pink Escape</p>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="booking.html" class="active">Book</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page booking-page">
+    <section class="booking-card">
+      <h2>Reserve your stay</h2>
+      <form id="booking-form">
+        <label for="fullname">Full name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <div class="grid-2">
+          <div>
+            <label for="checkin">Check-in</label>
+            <input id="checkin" name="checkin" type="date" required>
+          </div>
+          <div>
+            <label for="checkout">Check-out</label>
+            <input id="checkout" name="checkout" type="date" required>
+          </div>
+        </div>
+
+        <label for="guests">Guests</label>
+        <input id="guests" name="guests" type="number" min="1" max="10" value="1" required>
+
+        <label for="roomType">Room Type</label>
+        <select id="roomType" name="roomType" required>
+          <option value="">— Choose —</option>
+          <option value="entire">Entire place</option>
+          <option value="private">Private room</option>
+          <option value="shared">Shared room</option>
+          <option value="studio">Studio unit</option>
+          <option value="suite">Suite</option>
+        </select>
+
+        <label for="notes">Special requests (optional)</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="E.g. late check-in, birthday setup..."></textarea>
+
+        <label for="notes">Special requests (optional)</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="E.g. late check-in, birthday setup..."></textarea>
+
+        <button type="submit" class="btn">Request Booking</button>
+      </form>
+
+      <p class="note">This is a demo booking form. Submitting will show a confirmation message but no real reservation is made.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year-4"></span> Pink Sunset — Book with a blush.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

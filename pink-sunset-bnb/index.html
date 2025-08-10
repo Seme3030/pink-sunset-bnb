@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pink Sunset BnB — Home</title>
+
+  <!-- Google Fonts: playful but classy -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Pink Sunset</h1>
+      <p class="tag">A Luxurious Pink Escape</p>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="booking.html">Book</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to Pink Sunset</h2>
+        <p>Where every sunset blushes in shades of pink. Experience luxury, comfort and a playful atmosphere — perfectly curated for dreamy escapes.</p>
+        <a class="btn" href="booking.html">Book Your Stay</a>
+      </div>
+
+      <div class="slideshow">
+        <div class="slides">
+          <img src="images/11.jpg" alt="Pink Sunset - view 1" class="slide active" />
+
+          <img src="images/image2.jpg" alt="Pink Sunset - view 2" class="slide" />
+          <img src="images/image3.jpg" alt="Pink Sunset - view 3" class="slide" />
+          <img src="images/image4.jpg" alt="Pink Sunset - view 4" class="slide" />
+          <img src="images/image5.jpg" alt="Pink Sunset - view 5" class="slide" />
+        </div>
+        <button class="slide-btn prev" aria-label="Previous slide">&lt;</button>
+        <button class="slide-btn next" aria-label="Next slide">&gt;</button>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <section class="options">
+      <h3>Options to Book</h3>
+      <div class="cards">
+        <article class="card">
+          <img src="images/image1.jpg" alt="Entire place" />
+          <h4>Entire place</h4>
+          <p>Private luxury home — your own pink paradise.</p>
+          <a class="btn ghost" href="booking.html?type=entire">Select</a>
+        </article>
+
+        <article class="card">
+          <img src="images/image2.jpg" alt="Private room" />
+          <h4>Private room</h4>
+          <p>Cozy and elegant room with private amenities.</p>
+          <a class="btn ghost" href="booking.html?type=private">Select</a>
+        </article>
+
+        <article class="card">
+          <img src="images/image3.jpg" alt="Shared room" />
+          <h4>Shared room</h4>
+          <p>A friendly and playful shared option.</p>
+          <a class="btn ghost" href="booking.html?type=shared">Select</a>
+        </article>
+
+        <article class="card">
+          <img src="images/image4.jpg" alt="Studio unit" />
+          <h4>Studio unit</h4>
+          <p>Stylish studio with a luxurious pink twist.</p>
+          <a class="btn ghost" href="booking.html?type=studio">Select</a>
+        </article>
+
+        <article class="card">
+          <img src="images/image5.jpg" alt="Suite" />
+          <h4>Suite</h4>
+          <p>Extra space, premium comfort — perfect for celebrations.</p>
+          <a class="btn ghost" href="booking.html?type=suite">Select</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Pink Sunset — All pink everything.</p>
+  </footer>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

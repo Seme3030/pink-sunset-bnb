@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Pink Sunset</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Pink Sunset</h1>
+      <p class="tag">A Luxurious Pink Escape</p>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="booking.html">Book</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page contact-page">
+    <section class="contact-card">
+      <h2>Get in touch</h2>
+      <p>Have a question or special request? Send us a message and we'll respond shortly.</p>
+
+      <form id="contact-form">
+        <label for="cname">Name</label>
+        <input id="cname" name="name" type="text" placeholder="Your name" required>
+
+        <label for="cemail">Email</label>
+        <input id="cemail" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Address:</strong> Pink Sunset Lane, Dream District</p>
+        <p><strong>Phone:</strong> ‪078 442 4143‬</p>
+        <p><strong>Email:</strong> hello@pinksunset.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year-3"></span> Pink Sunset — Let’s stay in touch.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
